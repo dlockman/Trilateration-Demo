@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCA6ADF3186350B50002D2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6ADF2186350B50002D2B1 /* Foundation.framework */; };
+		CCA6ADF5186350B50002D2B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6ADF4186350B50002D2B1 /* CoreGraphics.framework */; };
+		CCA6ADF7186350B50002D2B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6ADF6186350B50002D2B1 /* UIKit.framework */; };
+		CCA6ADFD186350B50002D2B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCA6ADFB186350B50002D2B1 /* InfoPlist.strings */; };
+		CCA6ADFF186350B50002D2B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6ADFE186350B50002D2B1 /* main.m */; };
+		CCA6AE03186350B50002D2B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6AE02186350B50002D2B1 /* AppDelegate.m */; };
+		CCA6AE06186350B50002D2B1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA6AE04186350B50002D2B1 /* Main_iPhone.storyboard */; };
+		CCA6AE09186350B50002D2B1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA6AE07186350B50002D2B1 /* Main_iPad.storyboard */; };
+		CCA6AE0C186350B50002D2B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6AE0B186350B50002D2B1 /* ViewController.m */; };
+		CCA6AE0E186350B50002D2B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA6AE0D186350B50002D2B1 /* Images.xcassets */; };
+		CCA6AE15186350B50002D2B1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6AE14186350B50002D2B1 /* XCTest.framework */; };
+		CCA6AE16186350B50002D2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6ADF2186350B50002D2B1 /* Foundation.framework */; };
+		CCA6AE17186350B50002D2B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6ADF6186350B50002D2B1 /* UIKit.framework */; };
+		CCA6AE1F186350B50002D2B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCA6AE1D186350B50002D2B1 /* InfoPlist.strings */; };
+		CCA6AE21186350B50002D2B1 /* trilaterationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6AE20186350B50002D2B1 /* trilaterationDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCA6AE18186350B50002D2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCA6ADE7186350B50002D2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCA6ADEE186350B50002D2B1;
+			remoteInfo = trilaterationDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCA6ADEF186350B50002D2B1 /* trilaterationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trilaterationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA6ADF2186350B50002D2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCA6ADF4186350B50002D2B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCA6ADF6186350B50002D2B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CCA6ADFA186350B50002D2B1 /* trilaterationDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trilaterationDemo-Info.plist"; sourceTree = "<group>"; };
+		CCA6ADFC186350B50002D2B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCA6ADFE186350B50002D2B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCA6AE00186350B50002D2B1 /* trilaterationDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "trilaterationDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CCA6AE01186350B50002D2B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCA6AE02186350B50002D2B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCA6AE05186350B50002D2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		CCA6AE08186350B50002D2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		CCA6AE0A186350B50002D2B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCA6AE0B186350B50002D2B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCA6AE0D186350B50002D2B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCA6AE13186350B50002D2B1 /* trilaterationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trilaterationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA6AE14186350B50002D2B1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CCA6AE1C186350B50002D2B1 /* trilaterationDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trilaterationDemoTests-Info.plist"; sourceTree = "<group>"; };
+		CCA6AE1E186350B50002D2B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCA6AE20186350B50002D2B1 /* trilaterationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = trilaterationDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCA6ADEC186350B50002D2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA6ADF5186350B50002D2B1 /* CoreGraphics.framework in Frameworks */,
+				CCA6ADF7186350B50002D2B1 /* UIKit.framework in Frameworks */,
+				CCA6ADF3186350B50002D2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA6AE10186350B50002D2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA6AE15186350B50002D2B1 /* XCTest.framework in Frameworks */,
+				CCA6AE17186350B50002D2B1 /* UIKit.framework in Frameworks */,
+				CCA6AE16186350B50002D2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCA6ADE6186350B50002D2B1 = {
+			isa = PBXGroup;
+			children = (
+				CCA6ADF8186350B50002D2B1 /* trilaterationDemo */,
+				CCA6AE1A186350B50002D2B1 /* trilaterationDemoTests */,
+				CCA6ADF1186350B50002D2B1 /* Frameworks */,
+				CCA6ADF0186350B50002D2B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCA6ADF0186350B50002D2B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6ADEF186350B50002D2B1 /* trilaterationDemo.app */,
+				CCA6AE13186350B50002D2B1 /* trilaterationDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCA6ADF1186350B50002D2B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6ADF2186350B50002D2B1 /* Foundation.framework */,
+				CCA6ADF4186350B50002D2B1 /* CoreGraphics.framework */,
+				CCA6ADF6186350B50002D2B1 /* UIKit.framework */,
+				CCA6AE14186350B50002D2B1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA6ADF8186350B50002D2B1 /* trilaterationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6AE01186350B50002D2B1 /* AppDelegate.h */,
+				CCA6AE02186350B50002D2B1 /* AppDelegate.m */,
+				CCA6AE04186350B50002D2B1 /* Main_iPhone.storyboard */,
+				CCA6AE07186350B50002D2B1 /* Main_iPad.storyboard */,
+				CCA6AE0A186350B50002D2B1 /* ViewController.h */,
+				CCA6AE0B186350B50002D2B1 /* ViewController.m */,
+				CCA6AE0D186350B50002D2B1 /* Images.xcassets */,
+				CCA6ADF9186350B50002D2B1 /* Supporting Files */,
+			);
+			path = trilaterationDemo;
+			sourceTree = "<group>";
+		};
+		CCA6ADF9186350B50002D2B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6ADFA186350B50002D2B1 /* trilaterationDemo-Info.plist */,
+				CCA6ADFB186350B50002D2B1 /* InfoPlist.strings */,
+				CCA6ADFE186350B50002D2B1 /* main.m */,
+				CCA6AE00186350B50002D2B1 /* trilaterationDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCA6AE1A186350B50002D2B1 /* trilaterationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6AE20186350B50002D2B1 /* trilaterationDemoTests.m */,
+				CCA6AE1B186350B50002D2B1 /* Supporting Files */,
+			);
+			path = trilaterationDemoTests;
+			sourceTree = "<group>";
+		};
+		CCA6AE1B186350B50002D2B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6AE1C186350B50002D2B1 /* trilaterationDemoTests-Info.plist */,
+				CCA6AE1D186350B50002D2B1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCA6ADEE186350B50002D2B1 /* trilaterationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA6AE24186350B50002D2B1 /* Build configuration list for PBXNativeTarget "trilaterationDemo" */;
+			buildPhases = (
+				CCA6ADEB186350B50002D2B1 /* Sources */,
+				CCA6ADEC186350B50002D2B1 /* Frameworks */,
+				CCA6ADED186350B50002D2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trilaterationDemo;
+			productName = trilaterationDemo;
+			productReference = CCA6ADEF186350B50002D2B1 /* trilaterationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCA6AE12186350B50002D2B1 /* trilaterationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCA6AE27186350B50002D2B1 /* Build configuration list for PBXNativeTarget "trilaterationDemoTests" */;
+			buildPhases = (
+				CCA6AE0F186350B50002D2B1 /* Sources */,
+				CCA6AE10186350B50002D2B1 /* Frameworks */,
+				CCA6AE11186350B50002D2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCA6AE19186350B50002D2B1 /* PBXTargetDependency */,
+			);
+			name = trilaterationDemoTests;
+			productName = trilaterationDemoTests;
+			productReference = CCA6AE13186350B50002D2B1 /* trilaterationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCA6ADE7186350B50002D2B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dlockman;
+				TargetAttributes = {
+					CCA6AE12186350B50002D2B1 = {
+						TestTargetID = CCA6ADEE186350B50002D2B1;
+					};
+				};
+			};
+			buildConfigurationList = CCA6ADEA186350B50002D2B1 /* Build configuration list for PBXProject "trilaterationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCA6ADE6186350B50002D2B1;
+			productRefGroup = CCA6ADF0186350B50002D2B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCA6ADEE186350B50002D2B1 /* trilaterationDemo */,
+				CCA6AE12186350B50002D2B1 /* trilaterationDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCA6ADED186350B50002D2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA6AE09186350B50002D2B1 /* Main_iPad.storyboard in Resources */,
+				CCA6AE0E186350B50002D2B1 /* Images.xcassets in Resources */,
+				CCA6AE06186350B50002D2B1 /* Main_iPhone.storyboard in Resources */,
+				CCA6ADFD186350B50002D2B1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA6AE11186350B50002D2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA6AE1F186350B50002D2B1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCA6ADEB186350B50002D2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA6AE0C186350B50002D2B1 /* ViewController.m in Sources */,
+				CCA6AE03186350B50002D2B1 /* AppDelegate.m in Sources */,
+				CCA6ADFF186350B50002D2B1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA6AE0F186350B50002D2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA6AE21186350B50002D2B1 /* trilaterationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCA6AE19186350B50002D2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCA6ADEE186350B50002D2B1 /* trilaterationDemo */;
+			targetProxy = CCA6AE18186350B50002D2B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCA6ADFB186350B50002D2B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA6ADFC186350B50002D2B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CCA6AE04186350B50002D2B1 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA6AE05186350B50002D2B1 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CCA6AE07186350B50002D2B1 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA6AE08186350B50002D2B1 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CCA6AE1D186350B50002D2B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA6AE1E186350B50002D2B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCA6AE22186350B50002D2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCA6AE23186350B50002D2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCA6AE25186350B50002D2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "trilaterationDemo/trilaterationDemo-Prefix.pch";
+				INFOPLIST_FILE = "trilaterationDemo/trilaterationDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CCA6AE26186350B50002D2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "trilaterationDemo/trilaterationDemo-Prefix.pch";
+				INFOPLIST_FILE = "trilaterationDemo/trilaterationDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CCA6AE28186350B50002D2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/trilaterationDemo.app/trilaterationDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "trilaterationDemo/trilaterationDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "trilaterationDemoTests/trilaterationDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CCA6AE29186350B50002D2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/trilaterationDemo.app/trilaterationDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "trilaterationDemo/trilaterationDemo-Prefix.pch";
+				INFOPLIST_FILE = "trilaterationDemoTests/trilaterationDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCA6ADEA186350B50002D2B1 /* Build configuration list for PBXProject "trilaterationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA6AE22186350B50002D2B1 /* Debug */,
+				CCA6AE23186350B50002D2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCA6AE24186350B50002D2B1 /* Build configuration list for PBXNativeTarget "trilaterationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA6AE25186350B50002D2B1 /* Debug */,
+				CCA6AE26186350B50002D2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCA6AE27186350B50002D2B1 /* Build configuration list for PBXNativeTarget "trilaterationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA6AE28186350B50002D2B1 /* Debug */,
+				CCA6AE29186350B50002D2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCA6ADE7186350B50002D2B1 /* Project object */;
+}
