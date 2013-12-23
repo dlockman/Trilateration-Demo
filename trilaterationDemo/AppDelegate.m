@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  trilaterationDemo
 //
-//  Created by dlockman on 12/19/13.
-//  Copyright (c) 2013 dlockman. All rights reserved.
+//  Created by Daniel Lockman on 12/19/13.
+//  Copyright (c) 2013 Daniel Lockman. All rights reserved.
 //
 
 #import "AppDelegate.h"

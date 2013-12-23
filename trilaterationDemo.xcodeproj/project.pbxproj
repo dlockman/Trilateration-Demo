@@ -22,6 +22,7 @@
 		CCA6AE17186350B50002D2B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6ADF6186350B50002D2B1 /* UIKit.framework */; };
 		CCA6AE1F186350B50002D2B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCA6AE1D186350B50002D2B1 /* InfoPlist.strings */; };
 		CCA6AE21186350B50002D2B1 /* trilaterationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6AE20186350B50002D2B1 /* trilaterationDemoTests.m */; };
+		CCA6AED4186358FC0002D2B1 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA6AED3186358FC0002D2B1 /* libEstimoteSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CCA6AE1C186350B50002D2B1 /* trilaterationDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trilaterationDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CCA6AE1E186350B50002D2B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CCA6AE20186350B50002D2B1 /* trilaterationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = trilaterationDemoTests.m; sourceTree = "<group>"; };
+		CCA6AED3186358FC0002D2B1 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEstimoteSDK.a; path = "../iOS-SDK-master/EstimoteSDK/libEstimoteSDK.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			files = (
 				CCA6ADF5186350B50002D2B1 /* CoreGraphics.framework in Frameworks */,
 				CCA6ADF7186350B50002D2B1 /* UIKit.framework in Frameworks */,
+				CCA6AED4186358FC0002D2B1 /* libEstimoteSDK.a in Frameworks */,
 				CCA6ADF3186350B50002D2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +106,7 @@
 		CCA6ADF1186350B50002D2B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCA6AED3186358FC0002D2B1 /* libEstimoteSDK.a */,
 				CCA6ADF2186350B50002D2B1 /* Foundation.framework */,
 				CCA6ADF4186350B50002D2B1 /* CoreGraphics.framework */,
 				CCA6ADF6186350B50002D2B1 /* UIKit.framework */,
@@ -200,7 +204,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = dlockman;
+				ORGANIZATIONNAME = "Dan Lockman";
 				TargetAttributes = {
 					CCA6AE12186350B50002D2B1 = {
 						TestTargetID = CCA6ADEE186350B50002D2B1;
@@ -395,6 +399,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "trilaterationDemo/trilaterationDemo-Prefix.pch";
 				INFOPLIST_FILE = "trilaterationDemo/trilaterationDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Thoughtworker/Projects/iOS-SDK-master/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +416,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "trilaterationDemo/trilaterationDemo-Prefix.pch";
 				INFOPLIST_FILE = "trilaterationDemo/trilaterationDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Thoughtworker/Projects/iOS-SDK-master/EstimoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +486,7 @@
 				CCA6AE26186350B50002D2B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCA6AE27186350B50002D2B1 /* Build configuration list for PBXNativeTarget "trilaterationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +495,7 @@
 				CCA6AE29186350B50002D2B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
