@@ -15,6 +15,8 @@
 @property (nonatomic) CLBeaconRegion *beaconRegion;
 @property (nonatomic) CLLocationManager *locationManager;
 @property NSURL *serverUrl;
+@property NSMutableData *responseData;
+@property (nonatomic, strong) IBOutlet UILabel* coordinatesLabel;
 
 @end
 
@@ -23,17 +25,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	NSLog(@"Booting Up....");
     [self setupBeaconTracking];
 }
 
 - (void)setupBeaconTracking {
 	self.locationManager = [[CLLocationManager alloc] init];
 	self.locationManager.delegate = self;
-    self.serverUrl = [NSURL URLWithString:@"http://google.com"];
+    self.serverUrl = [NSURL URLWithString:@"http://192.168.1.6:9000"];
 	
-	NSUUID *uuid = [[NSUUID alloc] initWithUUIDString: @"097300A0-A48D-4BEB-A65B-8EB815E51DD8"];
-	self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID: uuid identifier: @"delta1"];
+	NSUUID *uuid = [[NSUUID alloc] initWithUUIDString: @"B9407F30-F5F8-466E-AFF9-25556B57FE6D"];
+	self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID: uuid identifier: @"thoughtWorksNRF"];
+    [self.locationManager startMonitoringForRegion: self.beaconRegion];
+    [self.locationManager startRangingBeaconsInRegion: self.beaconRegion];
+
+    NSLog(@"Configuration Complete");
 }
 
 
@@ -47,6 +53,7 @@
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
 	NSLog(@"Exited region");
 	[self.locationManager stopRangingBeaconsInRegion: self.beaconRegion];
+    
 }
 
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
@@ -64,7 +71,7 @@
     }
     
     //build an info object and convert to json
-    NSDictionary *messageData = [NSDictionary dictionaryWithObjectsAndKeys:distances, @"distances", identifiers, @"identifiers"];
+    NSDictionary* messageData = [NSDictionary dictionaryWithObjectsAndKeys:distances, @"distances", identifiers, @"identifiers", nil];
     
     //convert object to data
     NSData* jsonData = [NSJSONSerialization dataWithJSONObject:messageData options:NSJSONWritingPrettyPrinted error:&error];
@@ -102,6 +109,53 @@
 		  lastBeacon.major, lastBeacon.minor, lastBeacon.accuracy, lastBeacon.rssi, howClose);
 }
 
+
+#pragma mark NSURLConnection Delegate Methods
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    // A response has been received, this is where we initialize the instance var you created
+    // so that we can append data to it in the didReceiveData method
+    // Furthermore, this method is called each time there is a redirect so reinitializing it
+    // also serves to clear it
+    self.responseData = [[NSMutableData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    // Append the new data to the instance variable you declared
+    [self.responseData appendData:data];
+}
+
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
+    // Return nil to indicate not necessary to store a cached response for this connection
+    return nil;
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    // The request is complete and data has been received
+    // You can parse the stuff in your instance variable now
+    //parse out the json data
+    NSError* error;
+    NSDictionary* json = [NSJSONSerialization
+                          JSONObjectWithData:self.responseData //1
+                          
+                          options:kNilOptions
+                          error:&error];
+    
+    NSArray* pointEstimate = [json objectForKey:@"point_estimate"]; //2
+    
+    NSString* coordinatesString = [NSString stringWithFormat: @"X: \n %@ Y: %@ \n Z: %@", pointEstimate[0], pointEstimate[1], pointEstimate[2]];
+    self.coordinatesLabel.text = coordinatesString;
+    
+    NSLog(@"Point Estimate: %@", pointEstimate); //3
+    
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    // The request has failed for some reason!
+    // Check the error var
+    NSLog(@"Connection to server failed!");
+}
 
 
 - (void)didReceiveMemoryWarning
